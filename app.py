@@ -1,10 +1,9 @@
 #app.py
-from driver import subscriptions, isValid
+from utility import subscriptions, isValid
 from flask import Flask, request, render_template #import main Flask class and request trm_object
 import time
 
 app = Flask(__name__) #create the Flask app
-
 
 @app.route('/', methods = ['GET','POST'])
 def trmOSP():
