@@ -8,7 +8,7 @@ app = Flask(__name__) #create the Flask app
 
 
 @app.route('/', methods = ['GET','POST'])
-def formexample():
+def trmOSP():
     if request.method == 'POST': #this block is only entered when the form is submitted
         first_name = request.form.get('firstname')
         last_name = request.form['lastname']

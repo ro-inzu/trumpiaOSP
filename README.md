@@ -20,8 +20,8 @@ Trumpia API class for subscription, lists, messaging, and status report
   - python3.7 -m pip install requests, flask
 
 ### Flow
-- driver.py has two functions
-    - main(): calls subscriptions
+- app.py has two functions
+    - trmOSP(): calls subscriptions after getting POST information from the form
     - subscription(): adds new contacts/updates existing contacts (first and or last name only)
 
 ## API Documentation
@@ -31,3 +31,6 @@ Trumpia API class for subscription, lists, messaging, and status report
  - [Trumpia SMS Direct](http://classic.trumpia.com/api/docs/rest/functions/direct-sms.php)
  - [Trumpia Status Report](http://classic.trumpia.com/api/docs/rest/functions/report.php)
  - [Trumpia System Status Codes](http://classic.trumpia.com/api/docs/rest/status-code.php)
+
+ ![GitHub Logo](/screenshot/screenshot.png)
+Format: ![Alt Text](url)
