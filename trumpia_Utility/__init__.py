@@ -2,9 +2,9 @@
 import requests, json, time,os
 
 PATH = os.getcwd()
-USERNAME = ''
+USERNAME = 'roinzunza'
 TRMURL = 'https://api.trumpia.com/rest/v1/'+USERNAME+'/'
-APIKEY = ''
+APIKEY = '4431bcd2b64af6c91c169d55eb376b29'
 HEADER = {
     'Content-Type': 'application/json',
     'x-apikey': APIKEY
@@ -173,9 +173,10 @@ class Trumpia:
         for codes in file:
             key, value = codes.split('\t')
             subscription_status_codes[key] = value
-
         if status_code in subscription_status_codes:
             subscription_status = subscription_status_codes[status_code]
+        if status_code == "MPCE4001":
+            subscription_status = "MPCE4001"
         else:
             print('Status code: {} not in subscriptionStatusCodes'.format(status_code))
 

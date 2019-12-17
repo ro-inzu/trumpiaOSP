@@ -34,4 +34,6 @@ Trumpia API class for subscriptions
  - [Trumpia Status Report](http://classic.trumpia.com/api/docs/rest/functions/report.php)
  - [Trumpia System Status Codes](http://classic.trumpia.com/api/docs/rest/status-code.php)
 
- ![Screenshot](/screenshot/screenshot.png)
+ ![Screenshot](/screenshot/preview.png)
+  ![Screenshot](/screenshot/incorrectdata.png)
+   ![Screenshot](/screenshot/response.png)
