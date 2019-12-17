@@ -1,16 +1,18 @@
 # trumpiaOSP
 A simple online signup page that uses the Trumpia API resources for adding new contacts
 
-![PyPI - Python Version](https://img.shields.io/badge/python-3.6-blue)
+![PyPI - Python Version](https://img.shields.io/badge/python-3.7-blue)
+![PyPI - Flask Version](https://img.shields.io/badge/flask-1.1-orange)
+![PyPI - Requests Version](https://img.shields.io/badge/requests-2.22-green)
 
-Trumpia API class for subscription, lists, messaging, and status report
+
+Trumpia API class for subscriptions
 - PUT SUBSCRIPTION
 - GET REPORT FOR PUT SUBSCRIPTION
 - POST SUBSCRIPTION
 - GET REPORT FOR POST SUBSCRIPTION
 - GET SEARCH SUBSCRIPTION by mobile number
 - GET SUBSCRIPTION BY SPECIFIC ID
-- SMS FUNCTION - in progress
 
 ### Setup
 - (Recommended) create your virtual environment
