@@ -32,5 +32,4 @@ Trumpia API class for subscription, lists, messaging, and status report
  - [Trumpia Status Report](http://classic.trumpia.com/api/docs/rest/functions/report.php)
  - [Trumpia System Status Codes](http://classic.trumpia.com/api/docs/rest/status-code.php)
 
- ![GitHub Logo](/screenshot/screenshot.png)
-Format: ![Alt Text](url)
+ ![Screenshot](/screenshot/screenshot.png)
