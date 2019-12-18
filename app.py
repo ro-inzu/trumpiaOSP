@@ -1,5 +1,6 @@
 #app.py
-from utility import subscriptions, isValid
+from subscripts import subscriptionHandler as subcription
+from subscripts import validateFormat as validate
 from flask import Flask, request, render_template #import main Flask class and request trm_object
 import time
 
@@ -12,16 +13,16 @@ def trmOSP():
         last_name = request.form['lastname']
         mobile_number = request.form['mobile_number']
         #checks if the mobile number is valid
-        if(isValid(mobile_number)):
-             subscriptions(mobile_number,first_name,last_name)
-             results = "valid"
-             return render_template('index.html',results = results)
+        if(validate.isValid(mobile_number)):
+            results = subcription.subscriptions(mobile_number,first_name,last_name)
+            if results == None:
+                 results = "valid"
+            return render_template('index.html',results = results)
         else:
-            print('not valid')
             results = "invalid"
             return render_template('index.html',results = results)
 
-    return render_template('index.html')
+    return render_template('index.html',results = "none")
 
 if __name__ == '__main_':
-    app.run(debug=True, host="0.0.0.0") #run app in debug mode on port 5000
+    app.run(debug=True, host="0.0.0.0")
