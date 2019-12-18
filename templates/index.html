@@ -5,8 +5,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/style.css">
+	<script type= "text/javascript">
+		function response() {
+			var results = '{{results}}';
+			console.log(results + "sdfsdf");
+			if (results == "MPSE0501"){
+				alert("Mobile Number is blocked.")
+			}
+			if (results == "invalid"){
+				alert("Invalid Mobile Number!");
+			}
+			else if (results == "valid") {
+				alert("Contact successfully added");
+			}
+		}
+	</script>
 </head>
-<body >
+<body onload = "response();" >
 	<div class = "container2">
 		<h1>
 			SAMPLE TRUMPIA OSP

@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+from configparser import ConfigParser
 import requests, json, time,os
 
 PATH = os.getcwd()
-USERNAME = ''
+"""------------GET TRM API CREDENTIALS----------- """
+PARSER = ConfigParser()
+PARSER.read('conf.ini')
+USERNAME = PARSER.get('trm_api','trm_username')
+APIKEY = PARSER.get('trm_api','trm_apikey')
 TRMURL = 'https://api.trumpia.com/rest/v1/'+USERNAME+'/'
-APIKEY = ''
 HEADER = {
     'Content-Type': 'application/json',
     'x-apikey': APIKEY
@@ -157,6 +161,7 @@ class Trumpia:
                         print('trumpia_Utility |Status code: {}'.format(status_code))
                         subscription_status = self.subscriptionStatusCodes(status_code)
                         print(status_code + ': ' + subscription_status)
+                        return status_code
                     #SUCESSFUL PUT SUBSCRIPTION
                     if 'subscription_id' in data:
                         subscription_id = data['subscription_id']
