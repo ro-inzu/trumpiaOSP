@@ -5,6 +5,11 @@ A simple online signup page that uses the Trumpia API resources for adding new c
 ![PyPI - Flask Version](https://img.shields.io/badge/flask-1.1-orange)
 ![PyPI - Requests Version](https://img.shields.io/badge/requests-2.22-green)
 
+![Screenshot](/screenshot/preview.png)
+![Screenshot](/screenshot/incorrectdata.png)
+![Screenshot](/screenshot/response.png)
+![Screenshot](/screenshot/blocked.png)
+![Screenshot](/screenshot/success.png)
 
 Trumpia API class for subscriptions
 - PUT SUBSCRIPTION
@@ -33,7 +38,3 @@ Trumpia API class for subscriptions
  - [Trumpia SMS Direct](http://classic.trumpia.com/api/docs/rest/functions/direct-sms.php)
  - [Trumpia Status Report](http://classic.trumpia.com/api/docs/rest/functions/report.php)
  - [Trumpia System Status Codes](http://classic.trumpia.com/api/docs/rest/status-code.php)
-
- ![Screenshot](/screenshot/preview.png)
-  ![Screenshot](/screenshot/incorrectdata.png)
-   ![Screenshot](/screenshot/response.png)
