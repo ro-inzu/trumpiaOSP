@@ -1,3 +1,6 @@
 #virtualenv
 /env
 /__pycache__
+conf.ini
+/*/__pycache__
+/*/.DS_Store
