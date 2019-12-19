@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script type= "text/javascript">
 		function response() {
 			var results = '{{results}}';
@@ -21,26 +24,34 @@
 		}
 	</script>
 </head>
-<body onload = "response();" >
+
+<body style = "background-color:WhiteSmoke"; onload = "response();" >
 	<div class = "container2">
-		<h1>
+		<h3>
 			SAMPLE TRUMPIA OSP
-		</h1>
+		</h3>
 	</div>
 	<div class = "container1">
-		<form method = "POST">
-			<div>
-				<input type="text" name="firstname" placeholder="First Name">
-			</div>
-			<div>
-				<input type="text" name="lastname" placeholder="Last Name">
-			</div>
-			<div>
-				<input type="text" name="mobile_number" placeholder="Number">
-			</div>
-			<div>
-				<input type="submit" value="Submit">
-			</div>
+		<form  method = "POST">
+		  <div class="form-group">
+			<input
+			type="text" class="form-control" id="first_name" placeholder="Enter First Name" name="firstname">
+		  </div>
+		  <div class="form-group">
+			<input type="text" class="form-control" id="last_name" placeholder="Enter Last Name" name="lastname">
+		  </div>
+		  <div class="form-group">
+			<input type="text" class="form-control" id="pwd" placeholder="Enter mobile number" name="mobile_number" required>
+		  </div>
+		  <div>
+			   <button type="submit" class="btn btn-success btn-primary btn-block">Submit
+			   </button>
+		  </div>
+		  <br>
+		  <div class="custom-control custom-checkbox mb-3">
+			   <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+			   <label class="custom-control-label" for="customControlValidation1"> Agree to terms</label>
+ 	   		</div>
 		</form>
 		<br>
 	</div>

@@ -8,8 +8,10 @@ A simple online signup page that uses the Trumpia API resources for adding new c
 ![Screenshot](/screenshot/preview.png)
 ![Screenshot](/screenshot/incorrectdata.png)
 ![Screenshot](/screenshot/response.png)
-![Screenshot](/screenshot/blocked.png)
+![Screenshot](/screenshot/missingNumber.png)
 ![Screenshot](/screenshot/success.png)
+![Screenshot](/screenshot/invalid.png)
+![Screenshot](/screenshot/checkBox.png)
 
 Trumpia API class for subscriptions
 - PUT SUBSCRIPTION
