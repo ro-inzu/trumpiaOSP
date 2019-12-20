@@ -4,7 +4,8 @@ from subscripts import validateFormat as validate
 from flask import Flask, request, render_template #import main Flask class and request trm_object
 import time
 
-app = Flask(__name__) #create the Flask app
+application = Flask(__name__) #create the Flask app
+app = application
 
 @app.route('/', methods = ['GET','POST'])
 def trmOSP():
@@ -25,4 +26,4 @@ def trmOSP():
     return render_template('index.html',results = "none")
 
 if __name__ == '__main_':
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True)

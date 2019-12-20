@@ -12,6 +12,8 @@ A simple online signup page that uses the Trumpia API resources for adding new c
 ![Screenshot](/screenshot/success.png)
 ![Screenshot](/screenshot/invalid.png)
 ![Screenshot](/screenshot/checkBox.png)
+![Screenshot](/screenshot/liveAWS.png)
+![Screenshot](/screenshot/awsEBconfig.png)
 
 Trumpia API class for subscriptions
 - PUT SUBSCRIPTION
@@ -40,3 +42,8 @@ Trumpia API class for subscriptions
  - [Trumpia SMS Direct](http://classic.trumpia.com/api/docs/rest/functions/direct-sms.php)
  - [Trumpia Status Report](http://classic.trumpia.com/api/docs/rest/functions/report.php)
  - [Trumpia System Status Codes](http://classic.trumpia.com/api/docs/rest/status-code.php)
+
+## Deploying a Flask APP on AWS Beanstalk
+- [AWS Beanstalk](https://towardsdatascience.com/deploying-a-flask-application-on-aws-elastic-beanstalk-via-cli-c0e93548472e)
+- [WSGI PATH](https://stackoverflow.com/questions/31169260/your-wsgipath-refers-to-a-file-that-does-not-exist)
+- WSGI path error use command "eb config": Under WSGI path refer to my screenshot. Should be the name of your app. 
